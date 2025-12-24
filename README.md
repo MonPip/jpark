@@ -2,6 +2,19 @@
 
 A modern, minimal portfolio website showcasing product management expertise in architecture, strategy, and technical prototyping.
 
+## Current Status (Last Updated: 2025-12-23)
+
+- ✅ Site deployed to GitHub Pages
+- ✅ Custom domain `jpark.it.com` configured with Namecheap DNS
+- ✅ DNS propagated successfully (pointing to GitHub Pages)
+- ⏳ **Waiting for HTTPS certificate** from Let's Encrypt (typically takes 20-45 min after DNS propagation)
+  - Check: https://github.com/MonPip/jpark.it.com/settings/pages
+  - Once available, enable "Enforce HTTPS" checkbox
+- ✅ Title updated to "Product Professional"
+- ✅ Contact info updated: james@jpark.it.com, LinkedIn, GitHub
+- ✅ Stock Tracker project added to portfolio
+- ✅ Contact links centered (3-item layout)
+
 ## Features
 
 - Modern & minimal design
