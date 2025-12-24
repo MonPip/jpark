@@ -365,9 +365,16 @@ body {
 }
 
 .contact-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--spacing-sm);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-links .contact-item {
+    flex: 0 1 250px;
 }
 
 .contact-item {
@@ -478,7 +485,11 @@ body {
     }
 
     .contact-links {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .contact-links .contact-item {
+        flex: 1 1 auto;
     }
 }
 
