@@ -200,6 +200,10 @@ body {
     background-color: var(--bg-secondary);
 }
 
+.section.timeline {
+    background-color: var(--bg-secondary);
+}
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -347,6 +351,90 @@ body {
 }
 
 /* ============================================
+   Timeline Section
+   ============================================ */
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    gap: var(--spacing-md);
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border: 4px solid var(--bg-secondary);
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.timeline-content {
+    flex: 1;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    transition: var(--transition-base);
+}
+
+.timeline-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color);
+}
+
+.timeline-year {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: var(--bg-tertiary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: var(--spacing-xs) 0;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================
    Contact Section
    ============================================ */
 .contact-intro {
@@ -367,7 +455,7 @@ body {
 .contact-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: var(--spacing-sm);
     max-width: 900px;
     margin: 0 auto;
@@ -484,12 +572,18 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .contact-links {
-        flex-direction: column;
+    .timeline-container::before {
+        left: 8px;
     }
 
-    .contact-links .contact-item {
-        flex: 1 1 auto;
+    .timeline-item {
+        flex-direction: row;
+        gap: var(--spacing-sm);
+    }
+
+    .timeline-marker {
+        width: 12px;
+        height: 12px;
     }
 }
 
