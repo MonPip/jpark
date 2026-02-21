@@ -56,7 +56,7 @@ All theming is controlled via CSS custom properties in the `:root` selector:
 ### Personalizing Content
 
 The site contains personalized content for James Park including:
-- Contact information: `james@jpark.it.com`, LinkedIn, GitHub
+- Contact information: `james@jpark.app`, LinkedIn, GitHub
 - Timeline section: Professional journey from 2011-present (Biochemistry/Physics → Social Impact → MSEE → Product Management career)
 - Featured projects: Stock Tracker (Next.js), MEAN Stack Application
 - Skills: Product Strategy, Architecture & Design, Technical Skills, Tools & Platforms
@@ -89,12 +89,12 @@ The site is configured for GitHub Pages deployment from the `main` branch root f
 Deploy workflow:
 1. Make changes locally
 2. Commit and push to `main` branch
-3. Site auto-deploys to: `https://monpip.github.io/jpark.it.com`
+3. Site auto-deploys to: `https://monpip.github.io/jpark`
 
 No GitHub Actions or build configuration needed - pure static hosting.
 
 ### Custom Domain
 
-To use the custom domain `jpark.it.com`:
-1. Add a `CNAME` file in the repository root with content: `jpark.it.com`
+To use the custom domain `jpark.app`:
+1. Add a `CNAME` file in the repository root with content: `jpark.app`
 2. Configure DNS with your domain provider to point to GitHub Pages

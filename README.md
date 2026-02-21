@@ -5,13 +5,13 @@ A modern, minimal portfolio website showcasing product management expertise in a
 ## Current Status (Last Updated: 2025-12-23)
 
 - ✅ Site deployed to GitHub Pages
-- ✅ Custom domain `jpark.it.com` configured with Namecheap DNS
+- ✅ Custom domain `jpark.app` configured with Namecheap DNS
 - ✅ DNS propagated successfully (pointing to GitHub Pages)
 - ⏳ **Waiting for HTTPS certificate** from Let's Encrypt (typically takes 20-45 min after DNS propagation)
-  - Check: https://github.com/MonPip/jpark.it.com/settings/pages
+  - Check: https://github.com/MonPip/jpark/settings/pages
   - Once available, enable "Enforce HTTPS" checkbox
 - ✅ Title updated to "Product Professional"
-- ✅ Contact info updated: james@jpark.it.com, LinkedIn, GitHub
+- ✅ Contact info updated: james@jpark.app, LinkedIn, GitHub
 - ✅ Stock Tracker project added to portfolio
 - ✅ Contact links centered (3-item layout)
 
@@ -42,7 +42,7 @@ This site is configured for GitHub Pages. To deploy:
 1. Push your changes to the repository
 2. Go to repository Settings > Pages
 3. Set source to "main" branch, root folder
-4. Your site will be live at `https://monpip.github.io/jpark.it.com`
+4. Your site will be live at `https://monpip.github.io/jpark`
 
 ## Customization
 
