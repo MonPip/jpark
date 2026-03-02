@@ -5,233 +5,381 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="James Park - Product Professional specializing in architecture, strategy, and code prototyping">
     <title>James Park | Product Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cursor Glow -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">JP</a>
+            <a href="#hero" class="logo">
+                <span class="logo-full">James Park</span>
+                <span class="logo-short">JP</span>
+            </a>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-bg-noise"></div>
+            <div class="hero-bg-vignette"></div>
+        </div>
         <div class="hero-content">
-            <h1 class="fade-in">James Park</h1>
-            <p class="subtitle fade-in">Product Professional | Architect | Strategist</p>
-            <p class="description fade-in">Building products through strategic vision and technical prototyping</p>
-            <div class="cta-buttons fade-in">
+            <h1 class="hero-title">James Park</h1>
+            <p class="hero-subtitle">
+                <span class="gradient-text">Product Manager</span> | Systems Thinker | Builder
+            </p>
+            <p class="hero-tagline">Aligning teams, shaping architecture, and shipping products people love.</p>
+            <div class="hero-ctas">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title reveal">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a Product Professional with a unique blend of strategic thinking and technical execution. My strength lies in architecting product solutions and translating vision into reality through code prototypes.</p>
-                    <p>I bridge the gap between business strategy and technical implementation, enabling teams to move faster from concept to product. Whether it's designing system architecture or building rapid prototypes, I bring a hands-on approach to product development.</p>
-                    <p>My approach combines deep user understanding, strategic product thinking, and the ability to prototype solutions quickly to validate ideas before full development.</p>
+                <figure class="about-photo reveal">
+                    <img
+                        src="assets/2F17AF4E-AFAC-4EE3-B59D-8B2DBE8F120E_1_105_c.jpeg"
+                        alt="James Park portrait"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </figure>
+                <div class="about-copy">
+                    <div class="about-pullquote reveal">
+                        <p>I think in systems.</p>
+                    </div>
+                    <div class="about-text reveal">
+                        <p>I started in biochemistry and physics, left to spend years in social work and education, then came back through electrical engineering and landed in product management. The winding path wasn't the plan, but it's the reason I'm good at what I do.</p>
+                        <p>I can sit with engineers and debate architecture, then turn around and make the case to stakeholders in language that actually lands. When I want to validate an idea, I don't write a spec and wait. I build it.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="section timeline">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">My Journey</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2012</span>
-                        <h3>College Graduation</h3>
-                        <p>Graduated with double major in Biochemistry and Physics. Earned Crown-Goodman Scholarship Award and William C. Champion Prize in Organic Chemistry, building a foundation for systematic and analytical thinking.</p>
+            <h2 class="section-title reveal">Experience</h2>
+            <div class="experience-container">
+
+                <div class="experience-entry reveal">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Senior Product Analyst</h3>
+                            <span class="experience-company">Craneware Group</span>
+                        </div>
+                        <span class="experience-date">2025 - Present</span>
+                    </div>
+                    <p class="experience-summary">Product analyst in health tech, working across the medications portfolio including formulary, financial management, and supply chain systems.</p>
+                    <ul class="experience-accomplishments">
+                        <li>Prototyped the next-generation dashboard vision for the medications portfolio, accelerating stakeholder alignment and iteration cycles</li>
+                        <li>Prototype was demoed to customers at the 340B conference to strong reception</li>
+                        <li>Now contributing to the MFP and supply management system</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry reveal">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Technical Product Manager</h3>
+                            <span class="experience-company">Talogy</span>
+                        </div>
+                        <span class="experience-date">2022 - 2025</span>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-callout" data-target="9" data-prefix="$" data-suffix="M+">
+                            <span class="stat-number">$0M+</span>
+                            <span class="stat-label">Revenue Impact</span>
+                        </div>
+                    </div>
+                    <p class="experience-summary">Led the Foundations team at a $250M global talent management company, owning authentication, authorization, and identity services across the enterprise platform.</p>
+                    <ul class="experience-accomplishments">
+                        <li>Shipped an IAM solution that unified 5 enterprise platforms, driving $9M+ in revenue impact across customers like Amazon, Toyota, and FAA</li>
+                        <li>Led SSO rollout coordinating 8 teams, becoming the org's subject matter expert and training CX teams on implementation</li>
+                        <li>Built MFA systems meeting FedRAMP, NIST, and SOC 2 requirements for government clients</li>
+                        <li>Overhauled a struggling team of 7 into a high-performing unit that regularly reported 9/10 happiness ratings</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry reveal">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Product Manager</h3>
+                            <span class="experience-company">innate.ly</span>
+                        </div>
+                        <span class="experience-date">2019 - 2022</span>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-callout" data-target="332" data-suffix="%">
+                            <span class="stat-number">0%</span>
+                            <span class="stat-label">Revenue Growth</span>
+                        </div>
+                        <div class="stat-callout" data-target="4.25" data-suffix="x" data-decimals="2">
+                            <span class="stat-number">0x</span>
+                            <span class="stat-label">Velocity Increase</span>
+                        </div>
+                    </div>
+                    <p class="experience-summary">First PM at a small startup transitioning from veterinary health to equine registration and shows. Inherited chaos, built process, shipped product.</p>
+                    <ul class="experience-accomplishments">
+                        <li>Implemented Scrum from scratch, increasing team velocity 4.25x (from 4 to 21 points) and cutting firefighting from 8/10 days to 1/10</li>
+                        <li>Delivered major equine platform features that grew gross annual revenue 332% to $1.53M</li>
+                        <li>Optimized the veterinary portfolio to $264K ARR with a $175K harvest</li>
+                    </ul>
+                </div>
+
+                <div class="experience-earlier reveal">
+                    <h4>Earlier</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2018-2019</span>
+                            <div class="timeline-content">
+                                <strong>Graduate Studies & Product Discovery</strong>
+                                <p>Accepted into UCCS MSEE program, completing 8 provisional courses with straight A's. Internship at Cobham sparked passion for product management, revealing the intersection of technical depth and user-centered strategy.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2012-2018</span>
+                            <div class="timeline-content">
+                                <strong>Social Impact & Service</strong>
+                                <p>Broke out of the academic bubble to serve in social work, non-profit, and education. Worked at Dale House Project, local ministry, and public schools, developing deep empathy for diverse user needs.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2012</span>
+                            <div class="timeline-content">
+                                <strong>B.S. Biochemistry & Physics</strong>
+                                <p>Graduated with double major. Earned Crown-Goodman Scholarship Award and William C. Champion Prize in Organic Chemistry, building a foundation for systematic and analytical thinking.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2012-2018</span>
-                        <h3>Social Impact & Service</h3>
-                        <p>Broke out of the academic bubble to serve in social work, non-profit, and education. Worked at Dale House Project, local ministry, and public schools, developing deep empathy for diverse user needs.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2018-2019</span>
-                        <h3>Graduate Studies & Product Discovery</h3>
-                        <p>Accepted into UCCS MSEE program, completing 8 provisional courses with straight A's. Internship at Cobham sparked passion for product management, revealing the intersection of technical depth and user-centered strategy.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2019-2022</span>
-                        <h3>innate.ly - Product Manager</h3>
-                        <p>Product Manager at small startup, putting theory into practice. Earned multiple promotions while building products from scratch, learning to move fast and make impact with limited resources.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2022-2025</span>
-                        <h3>Talogy - Technical Product Manager</h3>
-                        <p>Led foundational team at larger enterprise, navigating complex technical systems, compliance requirements, and organizational dynamics. Gained exposure across development, product, and business functions.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2025-Present</span>
-                        <h3>Craneware Group - Senior Product Analyst</h3>
-                        <p>Currently diving deep into health tech industry, combining technical expertise with business acumen to drive product strategy and innovation in healthcare technology.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+    <section id="projects" class="section">
+        <div class="container container-wide">
+            <h2 class="section-title reveal">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Stock Tracker</h3>
-                        <span class="project-tag">Prototype</span>
+
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <h3>Granite Security</h3>
+                        </div>
+                        <p class="project-description">Started this with a friend to solve a real problem: someone they knew was getting hit by spoofed domains. Built a full platform for detection, analysis, and takedown.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <a href="https://www.granitesecurity.app" target="_blank" class="project-link">
+                            View Live
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33 12.67L12.67 3.33M12.67 3.33H5.33M12.67 3.33v7.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-                    <p class="project-description">A real-time stock price tracking application with interactive charts and a community guestbook feature. Built to demonstrate rapid prototyping capabilities with modern web technologies.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Chart.js</span>
-                        <span class="tech-tag">Clerk Auth</span>
-                    </div>
-                    <a href="https://stonks-nextjs.vercel.app/" target="_blank" class="project-link">View Live →</a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>MEAN Stack Application</h3>
-                        <span class="project-tag">Full-Stack</span>
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <h3>Stock Tracker</h3>
+                        </div>
+                        <p class="project-description">My first app built with Claude Code. Someone needed a way to track stock prices, so I used it as an excuse to try AI-assisted development end to end. Real-time data, interactive charts, auth, and deployed.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Clerk Auth</span>
+                        </div>
+                        <a href="https://stonks-nextjs.vercel.app/" target="_blank" class="project-link">
+                            View Live
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33 12.67L12.67 3.33M12.67 3.33H5.33M12.67 3.33v7.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-                    <p class="project-description">A full-stack web application demonstrating the complete MEAN stack architecture. Built to showcase end-to-end development capabilities from database to frontend.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">Angular</span>
-                        <span class="tech-tag">Node.js</span>
-                    </div>
-                    <a href="https://meanstack2021.onrender.com/" target="_blank" class="project-link">View Live →</a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project Title 3</h3>
-                        <span class="project-tag">Product Strategy</span>
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <h3>MEAN Stack Application</h3>
+                        </div>
+                        <p class="project-description">My team was building on the MEAN stack, so I built a full app myself to actually understand what they were working with. Database to frontend, deployed and running.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <a href="https://meanstack2021.onrender.com/" target="_blank" class="project-link">
+                            View Live
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33 12.67L12.67 3.33M12.67 3.33H5.33M12.67 3.33v7.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-                    <p class="project-description">A strategic initiative you led, showcasing your ability to drive product vision and execution.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">GraphQL</span>
-                    </div>
-                    <a href="#" class="project-link">Learn More →</a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <!-- Tools & Tech Section -->
+    <section id="tools" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Product Strategy</h3>
-                    <ul>
-                        <li>Product Vision & Roadmapping</li>
-                        <li>Market & User Research</li>
-                        <li>Stakeholder Management</li>
-                        <li>Go-to-Market Strategy</li>
-                    </ul>
+            <h2 class="section-title reveal">Tools & Tech</h2>
+            <div class="tools-strip reveal">
+                <div class="tools-group">
+                    <span class="tools-label">Product & Delivery</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">Jira</span>
+                        <span class="tool-tag">Confluence</span>
+                        <span class="tool-tag">Aha!</span>
+                        <span class="tool-tag">Pendo</span>
+                        <span class="tool-tag">User Research</span>
+                        <span class="tool-tag">Scrum</span>
+                    </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Architecture & Design</h3>
-                    <ul>
-                        <li>System Architecture</li>
-                        <li>Technical Specifications</li>
-                        <li>API Design</li>
-                        <li>Database Design</li>
-                    </ul>
+                <div class="tools-group">
+                    <span class="tools-label">Identity & Security</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">Auth0</span>
+                        <span class="tool-tag">BetterAuth</span>
+                        <span class="tool-tag">Clerk</span>
+                        <span class="tool-tag">Okta</span>
+                        <span class="tool-tag">Entra ID</span>
+                        <span class="tool-tag">Identity Server</span>
+                        <span class="tool-tag">SAML</span>
+                        <span class="tool-tag">OAuth</span>
+                    </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>JavaScript / TypeScript</li>
-                        <li>React / Next.js</li>
-                        <li>Python</li>
-                        <li>SQL / NoSQL</li>
-                    </ul>
+                <div class="tools-group">
+                    <span class="tools-label">APIs & Integrations</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">REST</span>
+                        <span class="tool-tag">GraphQL</span>
+                        <span class="tool-tag">OpenAPI</span>
+                        <span class="tool-tag">Postman</span>
+                        <span class="tool-tag">Swagger UI</span>
+                        <span class="tool-tag">Stripe</span>
+                        <span class="tool-tag">Twilio</span>
+                        <span class="tool-tag">SendGrid</span>
+                        <span class="tool-tag">Resend</span>
+                    </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Figma / Design Tools</li>
-                        <li>Git / GitHub</li>
-                        <li>AWS / Cloud Platforms</li>
-                        <li>Analytics & Metrics</li>
-                    </ul>
+                <div class="tools-group">
+                    <span class="tools-label">Data</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">PostgreSQL</span>
+                        <span class="tool-tag">Neon</span>
+                        <span class="tool-tag">MongoDB</span>
+                        <span class="tool-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="tools-group">
+                    <span class="tools-label">Platform & Delivery</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">GitHub</span>
+                        <span class="tool-tag">GitHub Actions</span>
+                        <span class="tool-tag">Azure DevOps</span>
+                        <span class="tool-tag">Docker</span>
+                        <span class="tool-tag">Vercel</span>
+                        <span class="tool-tag">Render</span>
+                        <span class="tool-tag">Railway</span>
+                        <span class="tool-tag">AWS</span>
+                        <span class="tool-tag">Azure</span>
+                        <span class="tool-tag">Vitest</span>
+                        <span class="tool-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="tools-group">
+                    <span class="tools-label">AI Workflow</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">Claude Code</span>
+                        <span class="tool-tag">Codex</span>
+                        <span class="tool-tag">Copilot</span>
+                        <span class="tool-tag">Cursor</span>
+                        <span class="tool-tag">Gemini</span>
+                    </div>
+                </div>
+                <div class="tools-group">
+                    <span class="tools-label">Industry & Compliance</span>
+                    <div class="tools-tags">
+                        <span class="tool-tag">HIPAA</span>
+                        <span class="tool-tag">HITECH</span>
+                        <span class="tool-tag">GDPR</span>
+                        <span class="tool-tag">ISO 27001</span>
+                        <span class="tool-tag">FedRAMP</span>
+                        <span class="tool-tag">NIST</span>
+                        <span class="tool-tag">OWASP</span>
+                        <span class="tool-tag">340B</span>
+                        <span class="tool-tag">Revenue Cycle</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">Interested in collaborating or want to discuss product strategy? Let's connect!</p>
-
-            <div class="contact-content">
-                <div class="contact-links">
-                    <a href="mailto:james@jpark.app" class="contact-item">
-                        <span class="contact-icon">✉️</span>
-                        <span>james@jpark.app</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/pm-j-park/" class="contact-item" target="_blank">
-                        <span class="contact-icon">💼</span>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/MonPip" class="contact-item" target="_blank">
-                        <span class="contact-icon">💻</span>
-                        <span>GitHub</span>
-                    </a>
-                </div>
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="contact-intro reveal">Interested in collaborating or want to discuss product strategy? Let's connect.</p>
+            <div class="contact-links reveal">
+                <a href="mailto:james@jpark.app" class="contact-card">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M22 4L12 13L2 4"/>
+                    </svg>
+                    <span class="contact-card-label">Email</span>
+                    <span class="contact-card-value">james@jpark.app</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pm-j-park/" class="contact-card" target="_blank">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                    <span class="contact-card-label">LinkedIn</span>
+                    <span class="contact-card-value">Connect</span>
+                </a>
+                <a href="https://github.com/MonPip" class="contact-card" target="_blank">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                    </svg>
+                    <span class="contact-card-label">GitHub</span>
+                    <span class="contact-card-value">MonPip</span>
+                </a>
             </div>
         </div>
     </section>
@@ -239,7 +387,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 James Park. All rights reserved.</p>
+            <p>&copy; 2026 James Park</p>
         </div>
     </footer>
 
